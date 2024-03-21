@@ -7,7 +7,10 @@ const isEvening = hours >= 17 || hours < 4 // is it evening?
 const welcome = document.querySelector('#welcome')
 const h1 = welcome.querySelector('h1')
 
-// Not sure if it's just my computer but it's taking awhile when I adjust the time for my site to update the welcome message
+const key = "It's a secret to everybody."
+const secret = "Grumble, Grumble..."
+
+localStorage.setItem(key, secret)
 
 if (isMorning == true) {
     h1.textContent = "Good morning! Welcome to Lexi's Page!"
